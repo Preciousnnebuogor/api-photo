@@ -28,12 +28,12 @@ export default function Home() {
         <button onClick={handleSubmit}>Search1</button>
       </div>
 
-      <div>
+      <div className="img">
         {display &&
           display.map((items, index) => (
-            <div key={index}>
-              <p>{items.id}</p>
-              {items.alt_description && <p>{items.alt_description}</p>}
+            <div key={index} className="img">
+              {/* <p>{items.id}</p> */}
+              {/* {items.alt_description && <p>{items.alt_description}</p>} */}
               <img
                 src={items.urls?.small}
                 alt={items.alt_description || "Image"}
